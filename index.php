@@ -26,18 +26,20 @@
 <body>
   <div class="container" id="width-container" style="margin-top: 40px;">
     <h3>Formulário de Cadastro</h3>
+
     <form action="_inserir_produto.php" method="post">
+
       <div class="form-group">
 
         <label>Nro Produto</label>
-        <input type="number" class="form-control" name="nroProduto" placeholder="digite o número do produto" required autocomplete="off">
+        <input type="number" class="form-control" name="nroproduto" placeholder="digite o número do produto" required autocomplete="off">
 
       </div>
 
       <div class="form-group">
 
         <label>Nome do Produto</label>
-        <input type="text" class="form-control" name="nomeProduto" placeholder="digite o nome do produto" required autocomplete="off">
+        <input type="text" class="form-control" name="nomeproduto" placeholder="digite o nome do produto" required autocomplete="off">
 
       </div>
 
@@ -61,6 +63,7 @@
 
       </div>
 
+
       <div class="form-group">
         <label>Fornecedor</label>
         <select class="form-control" name="fornecedor" required>
@@ -68,9 +71,11 @@
           <option>Fornecedor A</option>
           <option>Fornecedor B</option>
           <option>Fornecedor C</option>
-
         </select>
       </div>
+
+
+
       <div style="text-align: right;">
         <button type="submit" id="btn" class="btn btn-success btn-sm">Cadastrar</button>
       </div>
