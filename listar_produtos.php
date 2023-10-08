@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -23,6 +24,7 @@
                     <th scope="col">Categoria</th>
                     <th scope="col">Quantidade</th>
                     <th scope="col">Fornecedor</th>
+                    <th scope="col">Ação</th>
                 </tr>
             </thead>
 
@@ -49,9 +51,11 @@
                     <td><?php echo $categoria ?></td>
                     <td><?php echo $quantidade ?></td>
                     <td><?php echo $fornecedor ?></td>
-
-                    <?php } ?>
+                    <td><a class="btn btn-warning btn-sm" href="editar_produto.php?id=<?php echo $id_estoque ?>"style="color: dark-gray" role="button"><i class="far fa-car"></i>&nbsp;Editar</a>
+                    </td>
                 </tr>
+            <?php } ?>
+
 
 
         </table>
